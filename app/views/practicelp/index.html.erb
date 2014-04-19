@@ -1,0 +1,17 @@
+<h1>Practicelp#index</h1>
+
+<p>現存ユーザ</p>
+<ul>
+<% @users.each do |user| %>
+<li><%= user.id %>:<%= user.name %>(<%= user.status %>)</li>
+<% end %>
+</ul>
+
+<p>削除ユーザ</p>
+<ul>
+<% @deleted_users.each do |user| %>
+<li><%= user.id %>:<%= user.name %>(<%= user.status %>)</li>
+<% end %>
+</ul>
+
+<p>Find me in app/views/practicelp/index.html.erb</p>
